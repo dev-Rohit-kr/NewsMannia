@@ -9,7 +9,7 @@ export class NewsItem extends Component {
         };
     }
     render() {
-        let { title, description, imgurl, newsUrl, } = this.props;
+        let { title, description, imgurl, newsUrl,author,publishedAt } = this.props;
         return (
             <>
                 <div className="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
@@ -19,6 +19,8 @@ export class NewsItem extends Component {
                         <p className="text-gray-600 text-sm mb-4">
                             {description}
                         </p>
+
+                        <p className="text-gray-400 mb-3 text-xs">By {author} on {publishedAt}</p>
                         <a href={newsUrl} className="inline-block px-4 py-2 bg-black text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition">Read More</a>
                     </div>
                     
