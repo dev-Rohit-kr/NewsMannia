@@ -4,7 +4,7 @@ import spinner from '../spinner2.gif';  // Assuming the spinner.gif file is in t
 export class Spinner extends Component {
   render() {
     return (
-      <div className='text-center'>
+      <div className='text-center '>
         <img src={spinner} alt="Loading..." />
       </div>
     );

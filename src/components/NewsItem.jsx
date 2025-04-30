@@ -5,7 +5,7 @@ export class NewsItem extends Component {
 
         this.state = {
             articles: this.articles,
-            loading: false,
+            loading: true,
         };
     }
     render() {
@@ -21,7 +21,9 @@ export class NewsItem extends Component {
                         </p>
                         <a href={newsUrl} className="inline-block px-4 py-2 bg-black text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition">Read More</a>
                     </div>
+                    
                 </div>
+                
 
 
             </>

@@ -65,7 +65,9 @@ export class News extends Component {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold text-center mb-6">NewsMannia - Top Headlines</h1>
 
-        {this.state.loading && <Spinner />}  {/* Show the Spinner component if loading is true */}
+        {this.state.loading && <div className="flex items-center justify-center min-h-screen">
+    <Spinner />
+  </div>}  {/* Show the Spinner component if loading is true */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {this.state.articles.map((element) => {
