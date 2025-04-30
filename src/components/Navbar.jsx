@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -25,7 +26,7 @@ const Navbar = () => {
             <h1 className='font-bold-700 text-lg'>NewsMannia.in</h1>
           </div>
           <div
-            className={`nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 ${
+            className={`nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[50vh] left-0 ${
               menuOpen ? 'top-[9%]' : 'top-[-100%]'
             } md:w-auto w-full flex items-center px-5 z-10`}
           >
